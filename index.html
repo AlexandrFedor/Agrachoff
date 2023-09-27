@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tanos</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <div class="header__logo">
+              <h1 class="header__title">Tanos</h1>
+            </div>
+            <div class="header__nav">
+              <div class="header__nav-dropdown">
+                <div class="dropdown__close">
+                  <div class="dropdown__close-img">
+                    <img
+                      class="header__img"
+                      src="img/header/close.svg"
+                      alt="close"
+                    />
+                  </div>
+                  <h1 class="header__text" id="dropdown__btn">МЕНЮ</h1>
+                </div>
+
+                <div class="header__dropdown-list" id="myDropdown">
+                  <a class="header__link" href="">Услуги</a>
+                  <a class="header__link" href="">Статьи</a>
+                  <a class="header__link" href="">Вакансии</a>
+                  <a class="header__link" href="">Франшиза</a>
+                </div>
+              </div>
+              <h1 class="header__text">Портфолио</h1>
+              <h1 class="header__text">Цены</h1>
+              <h1 class="header__text">Схема работы</h1>
+              <h1 class="header__text">Отзывы</h1>
+              <h1 class="header__text">Контакты</h1>
+              <h1 class="header__text">Гарантия</h1>
+            </div>
+            <div class="header__feedback">
+              <button class="header__btn">ОБРАТНЫЙ ЗВОНОК</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="page__intro">
+          <div class="intro__container container">
+            <div class="intro___body">
+              <div class="intro__about">
+                <div class="about__desc">
+                  <h1 class="about__desc-title">
+                    Ремонт под ключ от 2900 руб/м2.
+                  </h1>
+                  <p class="about__desc-text">
+                    При заказе ремонта делаем дизайн-проект в подарок
+                  </p>
+                </div>
+                <div class="about__advantage">
+                  <ul class="advantage__list advantage__container">
+                    <li class="advantage__item">
+                      <img
+                        class="advantage__img"
+                        src="/img/main/car.svg"
+                        alt="car"
+                      />
+                      <p class="advantage__text">
+                        Бесплатный выезд в день обращения
+                      </p>
+                    </li>
+                    <li class="advantage__item">
+                      <img
+                        class="advantage__img"
+                        src="/img//main/garant.svg"
+                        alt="garant"
+                      />
+                      <p class="advantage__text">Гарантия на работу до 5 лет</p>
+                    </li>
+                    <li class="advantage__item">
+                      <img
+                        class="advantage__img"
+                        src="/img/main/time.svg"
+                        alt="time"
+                      />
+                      <p class="advantage__text">Жесткое соблюдение сроков</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="intro__calculate calculate__container">
+                <div class="calculate__body"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script>
+      function myDropdown() {
+        document.querySelector("#myDropdown").classList.toggle("show");
+        document
+          .querySelector(".dropdown__close-img")
+          .classList.toggle("show");
+      }
+
+      document
+        .querySelector("#dropdown__btn")
+        .addEventListener("click", myDropdown);
+        document
+        .querySelector(".dropdown__close-img")
+        .addEventListener("click", myDropdown);
+    </script>
+  </body>
+</html>
